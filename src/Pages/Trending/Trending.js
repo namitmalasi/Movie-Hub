@@ -15,8 +15,10 @@ const Trending = () => {
 
     setContent(data.results);
   };
+
   useEffect(() => {
     fetchTrending();
+    // eslint-disable-next-line
   }, [page]);
 
   return (
