@@ -22,7 +22,7 @@ export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
   const history = useHistory();
-  
+
   useEffect(() => {
     if (value === 0) history.push("/");
     else if (value === 1) history.push("/movies");
@@ -49,6 +49,7 @@ export default function SimpleBottomNavigation() {
         label="Movies"
         icon={<MovieIcon />}
       />
+                              
       <BottomNavigationAction
         style={{ color: "white" }}
         label="TV Series"
